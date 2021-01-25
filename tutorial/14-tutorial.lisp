@@ -29,10 +29,10 @@
   (create-div body :content (format nil
        "<H1>Local Storage vs Session Storage</H1>
 <p width=500>
-The value of local storage persists in browser cache even after browser closed.
+The value of local storage persists in browser cache even after the browser is closed.
 If you reset this page the session storage key will remain the same, but openning
-in another window or tab will be a new session but if came from a click from this
-window the session keys are copied first to the new window.</p>
+in another window or tab will be a new session unless a link is followed from the
+current window when the session keys are copied first to the new window.</p>
 <br>
 <a href='.' target='_blank'>Another Window = Different Session</a><br>
 <br>
@@ -50,7 +50,7 @@ Changes made to a local key will fire an event and print below:<br>"
   (run body))
 
 (defun start-tutorial ()
-  "Start turtorial."
+  "Start tutorial."
 
   (initialize #'on-new-window)
   (open-browser))
