@@ -29,7 +29,7 @@
 ;; and that events do not wait for previous event handlers to complete.
 
 (defun start-tutorial ()
-  "Start turtorial."
+  "Start tutorial."
 
   (initialize #'on-new-window)
   (open-browser))
