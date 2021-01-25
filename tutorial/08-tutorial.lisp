@@ -12,7 +12,7 @@
    (in-drag
     :accessor in-drag-p
     :initform nil
-    :documentation "Insure only one box is dragged at a time.")
+    :documentation "Ensure only one box is dragged at a time.")
    (drag-x
     :accessor drag-x
     :documentation "The location of the left side of the box relative to mouse during drag.")
@@ -112,7 +112,7 @@
     (run body)))
 
 (defun start-tutorial ()
-  "Start turtorial."
+  "Start tutorial."
 
   (initialize #'on-new-window)
   (open-browser))
