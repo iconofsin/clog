@@ -6,7 +6,7 @@
 
 (defun on-new-window (body)
   (let* (last-tab
-	 ;; Note: Since the there is no need to use the tmp objects
+	 ;; Note: Since there is no need to use the tmp objects
 	 ;;       we reuse the same symbol name (tmp) even though the
 	 ;;       compiler can mark those for garbage collection early
 	 ;;       this not an issue as the element is created already
@@ -65,7 +65,7 @@
     ;; Panel 1 contents
     ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
     
-    (setf (place-holder fe1) "type here..")
+    (setf (place-holder fe1) "type here...")
     (setf (requiredp fe1) t)
     (setf (size fe1) 60)
 
@@ -171,7 +171,7 @@
     (run body)))
 
 (defun start-tutorial ()
-  "Start turtorial."
+  "Start tutorial."
 
   (initialize #'on-new-window)
   (open-browser))
