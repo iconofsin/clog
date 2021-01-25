@@ -83,7 +83,7 @@
 ;; and once the connection dies so does the on-new-window thread.
 
 (defun start-tutorial ()
-  "Start turtorial."
+  "Start tutorial."
 
   (initialize #'on-new-window)
   (open-browser))
