@@ -1,7 +1,7 @@
 Tutorial 13 is a minimalist project for CLOG
 
 Move the hello-clog directory to ~/common-lisp or another directory
-setup for QuickLisp to search. Then excute:
+setup for QuickLisp to search. Then execute:
 
 CL-USER> (ql:quickload :hello-clog)
 To load "hello-clog":
