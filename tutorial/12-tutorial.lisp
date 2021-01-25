@@ -1,13 +1,13 @@
-;; CLOG is an excellent choice for websites as well as GUI's for applications.
-;; The first 10 tutorials focused on a single "page" application. For GUIs
+;; CLOG is an excellent choice for websites as well as GUIs for applications.
+;; The first 10 tutorials focused on single-page applications. For GUIs
 ;; that works well and combining you CLOG app embedded in an native app that
 ;; provides a web control on desktop or mobile works well. CLOG apps of course
-;; are web apps right out of the box. However CLOG is also more then capable
-;; of handling things in a more traditional website manor.
+;; are web apps right out of the box. However CLOG is also more than capable
+;; of handling things in a more traditional website manner.
 ;;
-;; In the last tutorial it was demonstrated that one can take any HTML file
-;; add the boot.js file to it and then it becomes a dynamic interactive
-;; clog app. An entire site could be laid out using .html files and where
+;; In the last tutorial it was demonstrated that one can turn any HTML file into
+;; a dynamic interactive CLOG app simply by including the boot.js file.
+;; An entire site could be laid out using .html files and where
 ;; desired a full dynamic page can be created by copying the boot.html file
 ;; or some styled html template etc. (Look in the demos -coming soon- for
 ;; examples using templates like bootstrap with CLOG, etc).
@@ -30,7 +30,7 @@
       <h1>Pick a link</h1>
       <ul>
         <li><a href='/page1'>/page1</a> - a CLOG app
-        <li><a href='/page1.html'>/page1.html</a> - a CLOG app mascarading as a .html
+        <li><a href='/page1.html'>/page1.html</a> - a CLOG app masquerading as an .html
         <li><a href='/page2'>/page2</a> - a CLOG app using an alternative boot file
         <li><a href='/page3'>/page3</a> - tutorial 11 as part of this tutorial
         <li><a href='/tutorial/tut-11.html'>/tutorial/tut-11.html</a> - an html file using boot.js
@@ -113,14 +113,14 @@
   (set-on-new-window #'on-page2 :path "/page2" :boot-file "/debug.html")
 
   ;; Here we add another page, page3. But this time we use the html file
-  ;; from tutorial 11 and make it the boot-file and excute the same code
+  ;; from tutorial 11 and make it the boot-file and execute the same code
   ;; in (on-tutorial11) as in tutorial 11.
   (set-on-new-window #'on-tutorial11 :path "/page3"
 				     :boot-file "/tutorial/tut-11.html")
 
   ;; Setting a "default" path says that any use of an included boot.js
   ;; file will route to this function, in this case #'on-default
-  ;; that will deterime if this is coming from the path used in tutorial
+  ;; that will determine if this is coming from the path used in tutorial
   ;; 11 - "http://127.0.0.1:8080/tutorial/tut-11.html" and if does
   ;; use on-tutorial11 and if not say "No Dice!"
   (set-on-new-window #'on-default :path "default")
