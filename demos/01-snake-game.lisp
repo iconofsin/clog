@@ -41,9 +41,9 @@
 	   (create-div body :content
 "<H1>(Sparky The Snake)</H1>
  <br />
- <p>Use your kebyoard to move Sparky to pick up batteries.</p>
+ <p>Use your keyboard to move Sparky to pick up batteries.</p>
  <i>Be careful...</i><br />
- If sparky hits his tail he electrocute himself to <b>death!!</b>
+ If Sparky hits his tail he electrocutes himself to <b>death!!</b>
  <br /><br />
   Use the arrow keys or a,w,s,d for direction keys.<br/><br/>"))
 	 (ticker (create-span splash)))
