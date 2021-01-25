@@ -30,7 +30,7 @@ HTML Root         : static-files/
 Boot file default : /boot.html
 ```
 
-Most demos startup a browser, if not use http://127.0.0.1:8080
+Most demos start up a browser; if not, open http://127.0.0.1:8080
 
 Demo Summary
 
